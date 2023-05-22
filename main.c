@@ -75,7 +75,7 @@ void selectionSort(int arr[], int size)
     }
 } 
 
-void İnsertionSort(int arr[], int n) {
+void insertionSort(int arr[], int n) {
     int i, key, j;
     for (i = 1; i < n; i++) {
         key = arr[i];
@@ -252,7 +252,7 @@ void random_function_timing(int *p,int size)
     for (int i = 0; i < size; i++)
         p[i] = rand() % size;
     start = clock();
-    İnsertionSort(p, size);
+    insertionSort(p, size);
     end = clock();
     exe1 = ((double) (end - start)) / CLOCKS_PER_SEC * 1000;
     printf("Insertion Sort: %lf\n",exe1);   
@@ -305,7 +305,7 @@ void inline_function_timing(int *p,int size)
     
     for (int i = 0; i < size; i++)
         p[i] = rand() % size;
-    İnsertionSort(p, size);
+    insertionSort(p, size);
     
     //bubbleSort 
     start = clock();
@@ -323,7 +323,7 @@ void inline_function_timing(int *p,int size)
     
     //İnsertionSort
     start = clock();
-    İnsertionSort(p, size);
+    insertionSort(p, size);
     end = clock();
     exe1 = ((double) (end - start)) / CLOCKS_PER_SEC * 1000;
     printf("Insertion Sort: %lf\n",exe1);   
@@ -388,7 +388,7 @@ void inline_function_timing(int *p,int size)
     //İnsertionSort
     reverse_array(p,size);
     start = clock();
-    İnsertionSort(p, size);
+    insertionSort(p, size);
     end = clock();
     exe1 = ((double) (end - start)) / CLOCKS_PER_SEC * 1000;
     printf("Insertion Sort: %lf\n",exe1);   
