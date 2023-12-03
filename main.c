@@ -215,7 +215,7 @@ void mergeSort(int arr[], int start, int finish)
 }
 
 //DİNAMİK OLARAK DİZİ OLUŞTURMA
-int *array_create (size)
+int *array_create (int size)
 {
     int *p;
     p = (int*)malloc(sizeof(int) * size);
